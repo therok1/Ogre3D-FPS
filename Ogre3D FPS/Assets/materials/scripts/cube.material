@@ -1,0 +1,39 @@
+material Examples/red
+{
+	technique
+	{
+		pass
+		{
+			lighting on
+
+			ambient 0.1 0.3 0.1 1
+			diffuse 0.8 0.05 0.05 1
+			emissive 0.8 0.05 0.05 1
+
+			texture_unit
+			{
+				colour_op_ex source1 src_manual src_current 1 0 0
+			}
+		}
+	}
+}
+
+material Examples/blue
+{
+	technique
+	{
+		pass
+		{
+			lighting on
+
+			ambient 0.1 0.3 0.1 1
+			diffuse 0.8 0.05 0.05 1
+			emissive 0.8 0.05 0.05 1
+
+			texture_unit
+			{
+				colour_op_ex source1 src_manual src_current 0 0 1
+			}
+		}
+	}
+}
